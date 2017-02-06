@@ -1,0 +1,21 @@
+# Axes
+axis_vx: 1
+axis_vy: 2
+axis_vw: 0
+
+# base velocities
+max_vw: 0.8
+max_vx: 0.6
+max_vy: 0.5
+max_vw_run: 1.0
+max_vx_run: 1.3
+max_vy_run: 1.0
+
+deadman_button: 5
+run_button: 7
+head_button: 4
+
+acc_step_v: 0.05
+acc_step_w: 0.05
+
+

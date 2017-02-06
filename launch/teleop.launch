@@ -1,0 +1,17 @@
+<launch>
+
+  <!-- Joy -->
+  <node pkg="joy" type="joy_node" name="joy_node" respawn="true">
+    <param name="dev" value="/dev/input/js0" />
+  </node>
+  
+<!-- Segway teleop -->
+  <node pkg="segway_teleop" type="teleop_segway" name="segway_teleop" args="--deadman_no_publish" respawn="true">
+    <!--<remap from="cmd_vel" to="base_controller/command" />-->
+    <remap from="cmd_lift" to="/scoop_motor/cmd_lift" />
+    <remap from="cmd_scoop" to="/scoop_motor/cmd_scoop" />
+    <rosparam file="$(find segway_teleop)/config/teleop.yaml" command="load" />
+    <param name ="joy_msg_timeout" value='-1' />
+  </node>
+
+</launch>

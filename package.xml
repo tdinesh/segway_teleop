@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <name>segway_teleop</name>
+  <version>0.0.1</version>
+  <description>
+     teleop for segway
+  </description>
+  <author email="kevin@todo.todo">Kevin Watts</author>
+  <maintainer email="tdinesh@seas.upenn.edu">Dinesh Thakur</maintainer>
+  <license>BSD</license>
+  <url>http://ros.org/wiki/pr2_teleop</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>control_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>topic_tools</build_depend>
+  <build_depend>joy</build_depend>
+
+  <run_depend>std_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>control_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>topic_tools</run_depend>
+  <run_depend>joy</run_depend>
+
+</package>
